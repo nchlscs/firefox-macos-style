@@ -1,0 +1,65 @@
+@import 'navbar.css';
+@import 'urlbar.css';
+@import 'tabbar.css';
+@import 'sidebar.css';
+@import 'findbar.css';
+@import 'icons.css';
+
+/* Common colors */
+:root {
+  --hover-color-primary: rgba(0,0,0,0.07);
+  --hover-color-secondary: rgba(0,0,0,0.05);
+  --hover-color-tertiary: rgba(0,0,0,0.2);
+  --tint-color-primary: rgba(97,97,97,1);
+  --background-color-primary: rgba(253,251,252,1);
+  --background-color-secondary: rgba(192,190,191,1);
+  --background-color-tertiary: rgba(253,251,252,0.75);
+  --newtab-background-color: rgba(246,244,245,1) !important;
+}
+:root:-moz-lwtheme {
+  --hover-color-primary: rgba(255,255,255,0.07);
+  --hover-color-secondary: rgba(255,255,255,0.05);
+  --hover-color-tertiary: rgba(255,255,255,0.25);
+  --tint-color-primary: rgba(187,187,187,1);
+  --background-color-primary: rgba(41,42,42,1);
+  --background-color-secondary: rgba(85,86,86,1);
+  --background-color-tertiary: rgba(41,42,42,0.75);
+  --newtab-background-color: rgba(36,37,37,1) !important;
+}
+
+:root {
+  /* Popup window background color */
+  --toolbar-field-focus-background-color: var(--background-color-primary) !important;
+  --arrowpanel-background: var(--background-color-primary) !important;
+  /* Popup window hightlighted element colors */
+  --autocomplete-popup-highlight-background: var(--hover-color-tertiary) !important;
+  --autocomplete-popup-hover-background: var(--hover-color-primary) !important;
+  /* Empty page background color */
+  --tabpanel-background-color: var(--newtab-background-color) !important;
+}
+
+#nav-bar {
+  -moz-box-ordinal-group: 1 !important;
+}
+#titlebar {
+  -moz-box-ordinal-group: 2 !important;
+}
+#PersonalToolbar {
+  -moz-box-ordinal-group: 3 !important;
+}
+
+#nav-bar, #titlebar, #sidebar-box {
+  -moz-appearance: -moz-mac-vibrant-titlebar-light !important;
+}
+#nav-bar:-moz-lwtheme, #titlebar:-moz-lwtheme, 
+#sidebar-box:-moz-lwtheme {
+  -moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
+}
+
+/* Places window controls */
+.titlebar-buttonbox-container {
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 7px;
+}

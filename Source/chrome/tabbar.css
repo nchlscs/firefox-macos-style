@@ -1,0 +1,115 @@
+:root {
+  --tabbar-inactive-color: rgba(0,0,0,0.1);
+  --tabbar-border-color: rgba(0,0,0,0.4);
+}
+:root:-moz-lwtheme {
+  --tabbar-inactive-color: rgba(0,0,0,0.4);
+  --tabbar-border-color: rgba(0,0,0,1);
+}
+
+/* Sets tab bar horizontal insets */
+#titlebar {
+  margin-left: -40px !important;
+  margin-right: -43px !important;
+}
+#main-window[inFullscreen] #titlebar {
+  margin-left: 0px !important;
+  margin-right: -3px !important;
+}
+
+/* Sets tab sizes */
+.tabbrowser-tab {
+  margin-top: -4px !important;
+  margin-left: -4px !important;
+  max-height: 28px !important;
+  min-height: 28px !important;
+  margin-bottom: 4px !important;
+}
+
+/* Sets tab appearance */
+.tab-background {
+  background-color: var(--tabbar-inactive-color) !important;
+  background-image: none !important;
+  box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1) !important;
+  border-radius: 0px !important;
+  border-top: 0.5px solid var(--tabbar-border-color) !important;
+  border-right: 0.5px solid var(--tabbar-border-color) !important;
+}
+tab:only-of-type .tab-background {
+  background-color: transparent !important;
+}
+.tab-background[selected], .tab-background[multiselected] {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-top: none !important;
+}
+
+/* Disables tab flash on load */
+.tabbrowser-tab .tab-loading-burst {
+  display: none !important;
+}
+
+/* Sets tab bar transition durations */
+#tabbrowser-tabs:not(:hover) tab {
+  transition: all 300ms ease 0ms !important;
+}
+
+/* Places tab close button */
+.tab-close-button {
+  -moz-box-ordinal-group: 0 !important;
+  display: initial !important;
+  margin-left: -2px !important;
+  margin-right: 4px !important;
+  padding: 2px !important;
+  width: 17px !important;
+  height: 17px !important;
+  opacity: 0 !important;
+  transition: all 200ms ease 0ms !important;
+}
+tab:hover .tab-close-button {
+  opacity: 1 !important;
+}
+tab[pinned] .tab-close-button {
+  display: none !important;
+}
+
+/* Disables favicon spring */
+.tabbrowser-tab .tab-icon-image {
+  display: inherit !important;
+}
+.tab-throbber {
+  display: none !important;
+}
+
+/* Sets tab max width */
+.tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"]) {
+  max-width: 100% !important;
+}
+
+/* Hides single tab */
+tab:only-of-type:not([pinned]) {
+  display: none !important;
+}
+#TabsToolbar, #tabbrowser-tabs, #tabbrowser-arrowscrollbox {
+  min-height: 0px !important;
+}
+
+/* Hides tab bar extra controls */
+#alltabs-button, #scrollbutton-up, #scrollbutton-down {
+  visibility: collapse !important;
+}
+
+/* Centeres tab content */
+.tab-content::before {
+  -moz-box-flex: 1 !important;
+  display: -moz-box !important;
+  content: "" !important;
+}
+tab:not([pinned]) .tab-content {
+  padding-right: 24px !important;
+}
+
+/* Hides indicator in private window */
+.private-browsing-indicator {
+  display: none !important;
+}

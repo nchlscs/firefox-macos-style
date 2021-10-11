@@ -1,0 +1,45 @@
+#nav-bar {
+  height: 52px !important;
+  padding-left: 90px !important;
+  padding-right: 8px !important;
+}
+#main-window[inFullscreen] #nav-bar {
+  padding-left: 8px !important;
+}
+
+#nav-bar {
+  background-color: transparent !important;
+}
+
+#navigator-toolbox:not([inFullscreen]) {
+  background-color: var(--background-color-tertiary) !important;
+}
+#navigator-toolbox[inFullscreen] {
+  background-color: var(--background-color-primary) !important;
+}
+
+/* Toolbar button look */
+:root {
+  --button-hover-bgcolor: var(--hover-color-primary) !important;
+  --toolbarbutton-inner-padding: 6px !important;
+  --toolbarbutton-active-background: var(--hover-color-tertiary) !important;
+}
+#nav-bar .toolbarbutton-1 image,
+toolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+  fill: var(--tint-color-primary) !important;
+  border-radius: 6px !important;
+}
+#nav-bar .toolbarbutton-1 {
+  padding: 4px !important;
+}
+
+/* Compresses urlbar in navbar */
+#nav-bar toolbarspring {
+  -moz-box-flex: 300 !important;
+}
+
+#reload-button image,
+#stop-button image,
+#downloads-button image {
+  animation-duration: 0s !important;
+}
