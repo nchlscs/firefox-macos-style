@@ -10,20 +10,25 @@
 /* Sets tab bar horizontal insets */
 #titlebar {
   margin-left: -40px !important;
-  margin-right: -43px !important;
+  margin-right: -41px !important;
 }
 #main-window[inFullscreen] #titlebar {
   margin-left: 0px !important;
-  margin-right: -3px !important;
+  margin-right: -1px !important;
 }
 
 /* Sets tab sizes */
 .tabbrowser-tab {
   margin-top: -4px !important;
-  margin-left: -4px !important;
   max-height: 28px !important;
   min-height: 28px !important;
   margin-bottom: 4px !important;
+}
+
+/* Space between tabs */
+.tabbrowser-tab {
+  padding-inline: 0px !important;
+  margin-inline-start: 0px !important;
 }
 
 /* Sets tab appearance */
@@ -92,11 +97,12 @@ tab:only-of-type:not([pinned]) {
 }
 #TabsToolbar, #tabbrowser-tabs, #tabbrowser-arrowscrollbox {
   min-height: 0px !important;
+  transition: none !important;
 }
 
 /* Hides tab bar extra controls */
 #alltabs-button, #scrollbutton-up, #scrollbutton-down {
-  visibility: collapse !important;
+  display: none !important;
 }
 
 /* Centeres tab content */
