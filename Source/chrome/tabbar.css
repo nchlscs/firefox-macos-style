@@ -56,7 +56,7 @@ tab:only-of-type .tab-background {
 
 /* Sets tab bar transition durations */
 #tabbrowser-tabs:not(:hover) tab {
-  transition: all 300ms ease 0ms !important;
+  transition: all 300ms ease-out 0ms !important;
 }
 
 /* Places tab close button */
