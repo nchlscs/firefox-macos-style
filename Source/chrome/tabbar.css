@@ -1,10 +1,10 @@
 :root {
   --tabbar-inactive-color: rgba(0,0,0,0.07);
-  --tabbar-border-color: rgba(0,0,0,0.4);
+  --tabbar-border-color: rgba(0,0,0,0.2);
 }
 :root:-moz-lwtheme {
   --tabbar-inactive-color: rgba(0,0,0,0.4);
-  --tabbar-border-color: rgba(0,0,0,1);
+  --tabbar-border-color: rgba(0,0,0,0.8);
 }
 
 /* Sets tab bar horizontal insets */
