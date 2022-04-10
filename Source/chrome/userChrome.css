@@ -14,7 +14,7 @@
   --background-color-primary: rgba(253,251,252,1);
   --background-color-secondary: rgba(192,190,191,1);
   --background-color-tertiary: rgba(253,251,252,0.75);
-  --newtab-background-color: rgba(246,244,245,1) !important;
+  --newtab-background-color: rgba(234,234,234,1) !important;
 }
 :root:-moz-lwtheme {
   --hover-color-primary: rgba(255,255,255,0.07);
@@ -24,7 +24,7 @@
   --background-color-primary: rgba(41,42,42,1);
   --background-color-secondary: rgba(85,86,86,1);
   --background-color-tertiary: rgba(41,42,42,0.75);
-  --newtab-background-color: rgba(36,37,37,1) !important;
+  --newtab-background-color: rgba(37, 37, 37, 1) !important;
 }
 
 :root {

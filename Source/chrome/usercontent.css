@@ -1,13 +1,13 @@
 body {
-  --newtab-background-color: rgba(246,244,245,1) !important;
-  --newtab-text-primary-color: rgba(73,71,72,1) !important;
-  --hover-color: rgba(213,211,212,1) !important;
+  --newtab-background-color: rgba(234,234,234,1) !important;
+  --newtab-text-primary-color: rgba(72,72,72,1) !important;
+  --hover-color: rgba(212,212,212,1) !important;
 }
 
 body[lwt-newtab-brighttext] {
-  --newtab-background-color: rgba(36, 37, 37, 1) !important;
-  --newtab-text-primary-color: rgba(233,231,232,1) !important;
-  --hover-color: rgba(56,57,57,1) !important;
+  --newtab-background-color: rgba(37, 37, 37, 1) !important;
+  --newtab-text-primary-color: rgba(232,232,232,1) !important;
+  --hover-color: rgba(57,57,57,1) !important;
 }
 
 .ds-outer-wrapper-breakpoint-override main {
