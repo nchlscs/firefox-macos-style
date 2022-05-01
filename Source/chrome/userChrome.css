@@ -7,23 +7,24 @@
 
 /* Common colors */
 :root {
-  --hover-color-primary: rgba(0,0,0,0.07);
-  --hover-color-secondary: rgba(0,0,0,0.05);
-  --hover-color-tertiary: rgba(0,0,0,0.2);
-  --tint-color-primary: rgba(97,97,97,1);
-  --background-color-primary: rgba(253,251,252,1);
-  --background-color-secondary: rgba(192,190,191,1);
-  --background-color-tertiary: rgba(253,251,252,0.75);
-  --newtab-background-color: rgba(234,234,234,1) !important;
+  --hover-color-primary: rgba(0, 0, 0, 0.07);
+  --hover-color-secondary: rgba(0, 0, 0, 0.05);
+  --hover-color-tertiary: rgba(0, 0, 0, 0.2);
+  --tint-color-primary: rgba(97, 97, 97, 1);
+  --background-color-primary: rgba(253, 251, 252, 1);
+  --background-color-secondary: rgba(192, 190, 191, 1);
+  --background-color-tertiary: rgba(253, 251, 252, 0.75);
+  --newtab-background-color: rgba(244, 244, 244, 1) !important;
 }
+
 :root:-moz-lwtheme {
-  --hover-color-primary: rgba(255,255,255,0.07);
-  --hover-color-secondary: rgba(255,255,255,0.05);
-  --hover-color-tertiary: rgba(255,255,255,0.25);
-  --tint-color-primary: rgba(187,187,187,1);
-  --background-color-primary: rgba(41,42,42,1);
-  --background-color-secondary: rgba(85,86,86,1);
-  --background-color-tertiary: rgba(41,42,42,0.75);
+  --hover-color-primary: rgba(255, 255, 255, 0.07);
+  --hover-color-secondary: rgba(255, 255, 255, 0.05);
+  --hover-color-tertiary: rgba(255, 255, 255, 0.25);
+  --tint-color-primary: rgba(187, 187, 187, 1);
+  --background-color-primary: rgba(41, 42, 42, 1);
+  --background-color-secondary: rgba(85, 86, 86, 1);
+  --background-color-tertiary: rgba(41, 42, 42, 0.75);
   --newtab-background-color: rgba(37, 37, 37, 1) !important;
 }
 
@@ -41,17 +42,23 @@
 #nav-bar {
   -moz-box-ordinal-group: 1 !important;
 }
+
 #titlebar {
   -moz-box-ordinal-group: 2 !important;
 }
+
 #PersonalToolbar {
   -moz-box-ordinal-group: 3 !important;
 }
 
-#nav-bar, #titlebar, #sidebar-box {
+#nav-bar,
+#titlebar,
+#sidebar-box {
   -moz-appearance: -moz-mac-vibrant-titlebar-light !important;
 }
-#nav-bar:-moz-lwtheme, #titlebar:-moz-lwtheme, 
+
+#nav-bar:-moz-lwtheme,
+#titlebar:-moz-lwtheme,
 #sidebar-box:-moz-lwtheme {
   -moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
 }

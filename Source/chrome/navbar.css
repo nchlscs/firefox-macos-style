@@ -3,6 +3,7 @@
   padding-left: 90px !important;
   padding-right: 8px !important;
 }
+
 #main-window[inFullscreen] #nav-bar {
   padding-left: 8px !important;
 }
@@ -14,6 +15,7 @@
 #navigator-toolbox:not([inFullscreen]) {
   background-color: var(--background-color-tertiary) !important;
 }
+
 #navigator-toolbox[inFullscreen] {
   background-color: var(--background-color-primary) !important;
 }
@@ -24,11 +26,13 @@
   --toolbarbutton-inner-padding: 6px !important;
   --toolbarbutton-active-background: var(--hover-color-tertiary) !important;
 }
+
 #nav-bar .toolbarbutton-1 image,
-toolbar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+toolbar .toolbarbutton-1>.toolbarbutton-badge-stack {
   fill: var(--tint-color-primary) !important;
   border-radius: 6px !important;
 }
+
 #nav-bar .toolbarbutton-1 {
   padding: 4px !important;
 }
