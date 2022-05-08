@@ -8,6 +8,10 @@
   --url-bar-outline-color: rgb(51, 111, 157);
 }
 
+#urlbar-container {
+  max-width: 35% !important;
+}
+
 #urlbar {
   min-height: 28px !important;
   font-size: 13px !important;

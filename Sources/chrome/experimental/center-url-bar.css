@@ -11,14 +11,6 @@ regular value: 90 - 8 + (5 - 3) * 36 = 154px
 fullscreen value: (5 - 3) * 36 = 72px
 */
 
-#nav-bar toolbarspring {
-  max-width: 500px !important;
-}
-
-#urlbar-container {
-  max-width: 35% !important;
-}
-
 #nav-bar toolbarspring:last-of-type:before {
   -moz-box-flex: 1;
   display: -moz-box;

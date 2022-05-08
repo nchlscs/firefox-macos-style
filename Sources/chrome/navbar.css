@@ -39,7 +39,16 @@ toolbar .toolbarbutton-1>.toolbarbutton-badge-stack {
 
 /* Compresses urlbar in navbar */
 #nav-bar toolbarspring {
+  max-width: none !important;
   -moz-box-flex: 300 !important;
+}
+
+/* width is nav-bar padding-left - padding-right*/
+#nav-bar toolbarspring:last-of-type:before {
+  -moz-box-flex: 1;
+  display: -moz-box;
+  content: "";
+  width: 72px;
 }
 
 #reload-button image,
