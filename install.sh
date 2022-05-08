@@ -13,13 +13,13 @@ rm -rf "$firefox_path/chrome"
 rm -f "$firefox_path/user.js"
 
 # Install new style
-mv "firefox-macos-style-main/Source/chrome" "$firefox_path/chrome"
-mv "firefox-macos-style-main/Source/user.js" "$firefox_path/user.js"
+mv "firefox-macos-style-main/Sources/chrome" "$firefox_path/chrome"
+mv "firefox-macos-style-main/Sources/user.js" "$firefox_path/user.js"
 
 # Restart Firefox
 osascript -e 'quit app "Firefox"'
 osascript -e 'tell application "Firefox" to activate'
 
 # Remove temp files
-rm -r firefox-macos-style-main
+rm -r "firefox-macos-style-main"
 rm "$firefox_path/user.js"

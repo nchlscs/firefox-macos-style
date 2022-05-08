@@ -5,6 +5,9 @@
 @import 'findbar.css';
 @import 'icons.css';
 
+/* Experimental CSS. Disabled by default. */
+/* @import 'experimental/center-url-bar.css'; */
+
 /* Common colors */
 :root {
   --hover-color-primary: rgba(0, 0, 0, 0.07);
