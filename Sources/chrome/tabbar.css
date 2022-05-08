@@ -96,8 +96,14 @@ tab[pinned] .tab-close-button {
 }
 
 /* Sets tab max width */
-.tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"]) {
+tab:not([style^="max-width"]):not([pinned]),
+tab[style^="max-width: 100px"]:not([pinned]) {
   max-width: 100% !important;
+}
+
+tab:not([style^="max-width"]):not([pinned]):not([fadein]),
+tab[style^="max-width: 100px"]:not([pinned]):not([fadein]) {
+  max-width: 1px !important;
 }
 
 /* Hides single tab */
