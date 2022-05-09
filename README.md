@@ -11,7 +11,9 @@ Firefox style inspired by Safari. Only works properly on macOS.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/nchlscs/firefox-macos-style/main/install.sh)"
 ```
 
-2. Manually drag the new tab button to the navigation toolbar.
+2. Enable System theme in settings, otherwise correct appearance is not guaranteed.
+
+3. Drag the new tab button to the navigation toolbar.
 
 ## Upgrading
 
