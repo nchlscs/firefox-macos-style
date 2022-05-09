@@ -3,7 +3,7 @@ Firefox style inspired by Safari. Only works properly on macOS.
 
 ![Preview](https://raw.githubusercontent.com/nchlscs/firefox-macos-style/main/Preview.jpg)
 
-## Installing
+## Installation
 
 1. Open terminal and run the following script. It will download and place the contents of Sources folder to Firefox user folder. **Attention!** This will overwrite the current Firefox style, back it up first, if needed.
 
@@ -17,7 +17,7 @@ Firefox style inspired by Safari. Only works properly on macOS.
 
 To upgrade to the latest version, run the script above again.
 
-## Uninstalling
+## Uninstallation
 
 Remove `chrome` folder from the Firefox user folder.
 

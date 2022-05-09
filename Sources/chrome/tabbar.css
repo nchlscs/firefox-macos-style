@@ -1,11 +1,13 @@
 :root {
-  --tabbar-inactive-color: rgba(0, 0, 0, 0.07);
-  --tabbar-border-color: rgba(0, 0, 0, 0.2);
+  --tab-inactive-color: rgba(0, 0, 0, 0.05);
+  --tab-hover-color: rgba(0, 0, 0, 0.1);
+  --tab-border-color: rgba(0, 0, 0, 0.2);
 }
 
 :root:-moz-lwtheme {
-  --tabbar-inactive-color: rgba(0, 0, 0, 0.4);
-  --tabbar-border-color: rgba(0, 0, 0, 0.8);
+  --tab-inactive-color: rgba(0, 0, 0, 0.4);
+  --tab-hover-color: rgba(16, 16, 16, 0.4);
+  --tab-border-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Sets tab bar horizontal insets */
@@ -36,12 +38,16 @@
 /* Sets tab appearance */
 .tab-background {
   min-height: 28px !important;
-  background-color: var(--tabbar-inactive-color) !important;
+  background-color: var(--tab-inactive-color) !important;
   background-image: none !important;
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1) !important;
   border-radius: 0px !important;
-  border-top: 0.5px solid var(--tabbar-border-color) !important;
-  border-right: 0.5px solid var(--tabbar-border-color) !important;
+  border-top: 0.5px solid var(--tab-border-color) !important;
+  border-right: 0.5px solid var(--tab-border-color) !important;
+}
+
+tab:hover:not([selected]):not([multiselected]) .tab-background {
+  background-color: var(--tab-hover-color) !important;
 }
 
 tab:only-of-type .tab-background {
@@ -62,7 +68,7 @@ tab:only-of-type .tab-background {
 
 /* Sets tab bar transition durations */
 #tabbrowser-tabs:not(:hover) tab[fadein] {
-  transition: all 350ms ease 0ms !important;
+  transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms !important;
 }
 
 /* Places tab close button */
