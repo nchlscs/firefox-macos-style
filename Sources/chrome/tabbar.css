@@ -50,10 +50,6 @@ tab:hover:not([selected]):not([multiselected]) .tab-background {
   background-color: var(--tab-hover-color) !important;
 }
 
-tab:only-of-type .tab-background {
-  background-color: transparent !important;
-}
-
 .tab-background[selected],
 .tab-background[multiselected] {
   background-color: transparent !important;
