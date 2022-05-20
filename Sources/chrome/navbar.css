@@ -24,11 +24,11 @@
 :root {
   --button-hover-bgcolor: var(--hover-color-primary) !important;
   --toolbarbutton-inner-padding: 6px !important;
-  --toolbarbutton-active-background: var(--hover-color-tertiary) !important;
+  --toolbarbutton-active-background: var(--hover-color-primary) !important;
 }
 
 #nav-bar .toolbarbutton-1 image,
-toolbar .toolbarbutton-1>.toolbarbutton-badge-stack {
+#nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
   fill: var(--tint-color-primary) !important;
   border-radius: 6px !important;
 }
@@ -49,6 +49,13 @@ toolbar .toolbarbutton-1>.toolbarbutton-badge-stack {
   display: -moz-box;
   content: "";
   width: 82px;
+}
+
+#main-window[inFullscreen] #nav-bar toolbarspring:last-of-type:before {
+  -moz-box-flex: 1;
+  display: -moz-box;
+  content: "";
+  width: 0px;
 }
 
 #reload-button image,
