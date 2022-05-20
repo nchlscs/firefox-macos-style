@@ -68,6 +68,7 @@ body[lwt-newtab-brighttext] {
 }
 
 .personalize-button {
+  position: fixed !important;
   bottom: 16px !important;
   top: unset !important;
   background-image: url(chrome://browser/skin/permissions.svg) !important;
