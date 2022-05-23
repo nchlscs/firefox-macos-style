@@ -1,0 +1,12 @@
+/* 
+Enables compact navigation bar.
+*/
+
+#nav-bar {
+    height: 38px !important;
+}
+
+.titlebar-buttonbox-container {
+    left: 0px !important;
+    top: 12px !important;
+}
