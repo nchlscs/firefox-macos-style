@@ -7,20 +7,20 @@ left toolbar items count: 5
 right toolbar items count: 3
 toolbar item width: 36
 
-regular value: 90 - 8 + (5 - 3) * 36 = 154px
-fullscreen value: (5 - 3) * 36 = 72px
+regular value: 90 - 8 + (5 - 3) * 38 = 154px
+fullscreen value: (5 - 3) * 38 = 76px
 */
 
 #nav-bar toolbarspring:last-of-type:before {
   -moz-box-flex: 1;
   display: -moz-box;
   content: "";
-  width: 154px;
+  width: 158px;
 }
 
 #main-window[inFullscreen] #nav-bar toolbarspring:last-of-type:before {
   -moz-box-flex: 1;
   display: -moz-box;
   content: "";
-  width: 72px;
+  width: 76px;
 }
