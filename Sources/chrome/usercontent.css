@@ -1,15 +1,13 @@
 body {
-  --newtab-background-color: rgba(249, 249, 249, 1) !important;
+  --newtab-background-color: rgba(250, 250, 250, 1) !important;
   --newtab-background-color-secondary: rgba(254, 254, 254, 1) !important;
   --newtab-text-primary-color: rgba(72, 72, 72, 1) !important;
-  --hover-color: rgba(212, 212, 212, 1) !important;
 }
 
 body[lwt-newtab-brighttext] {
   --newtab-background-color: rgba(46, 46, 46, 1) !important;
   --newtab-background-color-secondary: rgba(38, 38, 38, 1) !important;
   --newtab-text-primary-color: rgba(232, 232, 232, 1) !important;
-  --hover-color: rgba(57, 57, 57, 1) !important;
 }
 
 .ds-outer-wrapper-breakpoint-override main {
@@ -34,6 +32,12 @@ body[lwt-newtab-brighttext] {
   font-size: 12px !important;
 }
 
+.icon-wrapper {
+  height: 52px !important;
+  width: 52px !important;
+  border-radius: 6px !important;
+}
+
 /* Two lines in Top Sites title */
 .top-site-outer .title span {
   white-space: break-spaces !important;
@@ -51,8 +55,9 @@ body[lwt-newtab-brighttext] {
 .top-site-outer .context-menu-button {
   margin-top: 8px !important;
   margin-right: -16px !important;
-  background-color: var(--hover-color) !important;
+  background-color: var(--newtab-background-color-secondary) !important;
   border-radius: 12px !important;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1) !important;
 }
 
 .top-site-outer:is(:hover, :focus, .active):not(.placeholder) .context-menu-button {

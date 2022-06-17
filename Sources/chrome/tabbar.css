@@ -73,9 +73,10 @@ tab:hover:not([selected]):not([multiselected]) .tab-background {
   display: initial !important;
   margin-left: -2px !important;
   margin-right: 4px !important;
-  padding: 2px !important;
+  padding: 3px !important;
   width: 17px !important;
   height: 17px !important;
+  color: var(--tint-color-primary) !important;
   opacity: 0 !important;
   transition: opacity 200ms ease 0ms !important;
 }
