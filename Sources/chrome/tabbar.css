@@ -27,6 +27,7 @@
   max-height: 28px !important;
   min-height: 28px !important;
   margin-bottom: 4px !important;
+  overflow-clip-margin: 4px !important;
 }
 
 /* Space between tabs */
