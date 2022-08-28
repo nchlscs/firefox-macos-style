@@ -1,145 +1,145 @@
 :root {
-  --tab-inactive-color: rgba(0, 0, 0, 0.05);
-  --tab-hover-color: rgba(0, 0, 0, 0.1);
-  --tab-border-color: rgba(0, 0, 0, 0.2);
+	--tab-inactive-color: rgba(0, 0, 0, 0.05);
+	--tab-hover-color: rgba(0, 0, 0, 0.1);
+	--tab-border-color: rgba(0, 0, 0, 0.2);
 }
 
 :root:-moz-lwtheme {
-  --tab-inactive-color: rgba(0, 0, 0, 0.4);
-  --tab-hover-color: rgba(16, 16, 16, 0.4);
-  --tab-border-color: rgba(0, 0, 0, 0.8);
+	--tab-inactive-color: rgba(0, 0, 0, 0.4);
+	--tab-hover-color: rgba(16, 16, 16, 0.4);
+	--tab-border-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Sets tab bar horizontal insets */
 #titlebar {
-  margin-left: -40px !important;
-  margin-right: -41px !important;
+	margin-left: -40px !important;
+	margin-right: -41px !important;
 }
 
 #main-window[inFullscreen] #titlebar {
-  margin-left: 0px !important;
-  margin-right: -1px !important;
+	margin-left: 0px !important;
+	margin-right: -1px !important;
 }
 
 /* Sets tab sizes */
 .tabbrowser-tab {
-  margin-top: -4px !important;
-  max-height: 28px !important;
-  min-height: 28px !important;
-  margin-bottom: 4px !important;
-  overflow-clip-margin: 4px !important;
+	margin-top: -4px !important;
+	max-height: 28px !important;
+	min-height: 28px !important;
+	margin-bottom: 4px !important;
+	overflow-clip-margin: 4px !important;
 }
 
 /* Space between tabs */
 .tabbrowser-tab {
-  padding-inline: 0px !important;
-  margin-inline-start: 0px !important;
+	padding-inline: 0px !important;
+	margin-inline-start: 0px !important;
 }
 
 /* Sets tab appearance */
 .tab-background {
-  min-height: 28px !important;
-  background-color: var(--tab-inactive-color) !important;
-  background-image: none !important;
-  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1) !important;
-  border-radius: 0px !important;
-  border-top: 0.5px solid var(--tab-border-color) !important;
-  border-right: 0.5px solid var(--tab-border-color) !important;
+	min-height: 28px !important;
+	background-color: var(--tab-inactive-color) !important;
+	background-image: none !important;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1) !important;
+	border-radius: 0px !important;
+	border-top: 0.5px solid var(--tab-border-color) !important;
+	border-right: 0.5px solid var(--tab-border-color) !important;
 }
 
 tab:hover:not([selected]):not([multiselected]) .tab-background {
-  background-color: var(--tab-hover-color) !important;
+	background-color: var(--tab-hover-color) !important;
 }
 
 .tab-background[selected],
 .tab-background[multiselected] {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  border-top: none !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+	border-top: none !important;
 }
 
 /* Disables tab flash on load */
 .tabbrowser-tab .tab-loading-burst {
-  display: none !important;
+	display: none !important;
 }
 
 /* Sets tab bar transition durations */
 #tabbrowser-tabs:not(:hover) tab[fadein] {
-  transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms !important;
+	transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms !important;
 }
 
 /* Places tab close button */
 .tab-close-button {
-  -moz-box-ordinal-group: 0 !important;
-  display: initial !important;
-  margin-left: -2px !important;
-  margin-right: 4px !important;
-  padding: 3px !important;
-  width: 17px !important;
-  height: 17px !important;
-  color: var(--tint-color-primary) !important;
-  opacity: 0 !important;
-  transition: opacity 200ms ease 0ms !important;
+	-moz-box-ordinal-group: 0 !important;
+	display: initial !important;
+	margin-left: -2px !important;
+	margin-right: 4px !important;
+	padding: 3px !important;
+	width: 17px !important;
+	height: 17px !important;
+	color: var(--tint-color-primary) !important;
+	opacity: 0 !important;
+	transition: opacity 200ms ease 0ms !important;
 }
 
 tab:hover .tab-close-button {
-  opacity: 1 !important;
+	opacity: 1 !important;
 }
 
 tab[pinned] .tab-close-button {
-  display: none !important;
+	display: none !important;
 }
 
 /* Disables favicon spring */
 .tabbrowser-tab .tab-icon-image {
-  display: inherit !important;
+	display: inherit !important;
 }
 
 .tab-throbber {
-  display: none !important;
+	display: none !important;
 }
 
 /* Sets tab max width */
 tab:not([style^="max-width"]):not([pinned]),
 tab[style^="max-width: 100px"]:not([pinned]) {
-  max-width: 100% !important;
+	max-width: 100% !important;
 }
 
 tab:not([style^="max-width"]):not([pinned]):not([fadein]),
 tab[style^="max-width: 100px"]:not([pinned]):not([fadein]) {
-  max-width: 1px !important;
+	max-width: 1px !important;
 }
 
 /* Hides single tab */
 tab[first-visible-tab][last-visible-tab]:not([pinned]) {
-  display: none !important;
+	display: none !important;
 }
 
 #TabsToolbar,
 #tabbrowser-tabs,
 #tabbrowser-arrowscrollbox {
-  min-height: 0px !important;
+	min-height: 0px !important;
 }
 
 /* Hides tab bar extra controls */
 #alltabs-button,
 #scrollbutton-up,
 #scrollbutton-down {
-  display: none !important;
+	display: none !important;
 }
 
 /* Centeres tab content */
 .tab-content::before {
-  -moz-box-flex: 1 !important;
-  display: -moz-box !important;
-  content: "" !important;
+	-moz-box-flex: 1 !important;
+	display: -moz-box !important;
+	content: "" !important;
 }
 
 tab:not([pinned]) .tab-content {
-  padding-right: 24px !important;
+	padding-right: 24px !important;
 }
 
 /* Hides indicator in private window */
 .private-browsing-indicator {
-  display: none !important;
+	display: none !important;
 }

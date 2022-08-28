@@ -1,82 +1,82 @@
 :root {
-  --url-bar-background-color: rgba(0, 0, 0, 0.05);
-  --url-bar-outline-color: rgb(133, 172, 245);
+	--url-bar-background-color: rgba(0, 0, 0, 0.05);
+	--url-bar-outline-color: rgb(133, 172, 245);
 }
 
 :root:-moz-lwtheme {
-  --url-bar-background-color: rgba(0, 0, 0, 0.2);
-  --url-bar-outline-color: rgb(51, 111, 157);
+	--url-bar-background-color: rgba(0, 0, 0, 0.2);
+	--url-bar-outline-color: rgb(51, 111, 157);
 }
 
 #urlbar-container {
-  max-width: 35% !important;
+	max-width: 35% !important;
 }
 
 #urlbar {
-  min-height: 28px !important;
-  font-size: 13px !important;
+	min-height: 28px !important;
+	font-size: 13px !important;
 }
 
-#urlbar[open=true] {
-  border-radius: 10px !important;
-  box-shadow: 0px 2px 20px rgba(4, 2, 5, 0.2) !important;
+#urlbar[open="true"] {
+	border-radius: 10px !important;
+	box-shadow: 0px 2px 20px rgba(4, 2, 5, 0.2) !important;
 }
 
 /* Centers text in urlbar */
 #urlbar:not([focused]) #urlbar-input {
-  text-align: center !important;
-  padding-right: 32px !important;
+	text-align: center !important;
+	padding-right: 32px !important;
 }
 
 #urlbar:not([focused])[textoverflow] #urlbar-input {
-  padding-right: 0px !important;
+	padding-right: 0px !important;
 }
 
 /* Urlbar icons look */
 .urlbar-page-action {
-  padding: 0px !important;
-  border-radius: 4px !important;
+	padding: 0px !important;
+	border-radius: 4px !important;
 }
 
 .urlbar-page-action image {
-  margin-left: 6px !important;
-  transform: scale(0.9, 0.9) !important;
+	margin-left: 6px !important;
+	transform: scale(0.9, 0.9) !important;
 }
 
 .identity-box-button {
-  border-radius: 4px !important;
+	border-radius: 4px !important;
 }
 
 .identity-box-button image {
-  transform: scale(0.9, 0.9) !important;
+	transform: scale(0.9, 0.9) !important;
 }
 
 #urlbar-background {
-  border-radius: 6px !important;
-  box-shadow: none !important;
-  outline-offset: -0.5px !important;
-  outline-width: 3.5px !important;
-  outline-color: var(--url-bar-outline-color) !important;
+	border-radius: 6px !important;
+	box-shadow: none !important;
+	outline-offset: -0.5px !important;
+	outline-width: 3.5px !important;
+	outline-color: var(--url-bar-outline-color) !important;
 }
 
 #urlbar:not([open]) #urlbar-background {
-  background-color: var(--url-bar-background-color) !important;
+	background-color: var(--url-bar-background-color) !important;
 }
 
 #urlbar[open] #urlbar-background {
-  border-radius: 10px !important;
-  border-color: var(--hover-color-tertiary) !important;
+	border-radius: 10px !important;
+	border-color: var(--hover-color-tertiary) !important;
 }
 
 /* Urlbar mode indicator look */
 #urlbar-search-mode-indicator,
 #identity-box.chromeUI #identity-icon-box,
 #identity-box.extensionPage #identity-icon-box {
-  background-color: var(--hover-color-secondary) !important;
+	background-color: var(--hover-color-secondary) !important;
 }
 
 #tracking-protection-icon-container,
 #star-button-box,
 #notification-popup-box {
-  display: none;
+	display: none;
 }

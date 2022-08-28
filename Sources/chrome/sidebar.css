@@ -2,9 +2,9 @@
 #sidebar,
 .sidebar-panel,
 body {
-  background: none !important;
+	background: none !important;
 }
 
 #sidebar-box {
-  background-color: var(--background-color-tertiary) !important;
+	background-color: var(--background-color-tertiary) !important;
 }

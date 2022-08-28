@@ -1,65 +1,65 @@
 #nav-bar {
-  height: 52px !important;
-  padding-left: 90px !important;
-  padding-right: 8px !important;
+	height: 52px !important;
+	padding-left: 90px !important;
+	padding-right: 8px !important;
 }
 
 #main-window[inFullscreen] #nav-bar {
-  padding-left: 8px !important;
+	padding-left: 8px !important;
 }
 
 #nav-bar {
-  background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 #navigator-toolbox:not([inFullscreen]) {
-  background-color: var(--background-color-tertiary) !important;
+	background-color: transparent !important;
 }
 
 #navigator-toolbox[inFullscreen] {
-  background-color: var(--background-color-primary) !important;
+	background-color: var(--background-color-primary) !important;
 }
 
 /* Toolbar button look */
 :root {
-  --button-hover-bgcolor: var(--hover-color-primary) !important;
-  --toolbarbutton-inner-padding: 6px !important;
-  --toolbarbutton-active-background: var(--hover-color-primary) !important;
+	--button-hover-bgcolor: var(--hover-color-primary) !important;
+	--toolbarbutton-inner-padding: 6px !important;
+	--toolbarbutton-active-background: var(--hover-color-primary) !important;
 }
 
 #nav-bar .toolbarbutton-1 image,
 #nav-bar .toolbarbutton-1 .toolbarbutton-badge-stack {
-  fill: var(--tint-color-primary) !important;
-  border-radius: 6px !important;
+	fill: var(--tint-color-primary) !important;
+	border-radius: 6px !important;
 }
 
 #nav-bar .toolbarbutton-1 {
-  padding: 5px !important;
+	padding: 5px !important;
 }
 
 /* Compresses urlbar in navbar */
 #nav-bar toolbarspring {
-  max-width: none !important;
-  -moz-box-flex: 300 !important;
+	max-width: none !important;
+	-moz-box-flex: 300 !important;
 }
 
 /* width is nav-bar padding-left - padding-right*/
 #nav-bar toolbarspring:last-of-type:before {
-  -moz-box-flex: 1;
-  display: -moz-box;
-  content: "";
-  width: 82px;
+	-moz-box-flex: 1;
+	display: -moz-box;
+	content: "";
+	width: 82px;
 }
 
 #main-window[inFullscreen] #nav-bar toolbarspring:last-of-type:before {
-  -moz-box-flex: 1;
-  display: -moz-box;
-  content: "";
-  width: 0px;
+	-moz-box-flex: 1;
+	display: -moz-box;
+	content: "";
+	width: 0px;
 }
 
 #reload-button image,
 #stop-button image,
 #downloads-button image {
-  animation-duration: 0s !important;
+	animation-duration: 0s !important;
 }
