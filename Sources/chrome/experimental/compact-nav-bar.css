@@ -10,3 +10,8 @@ Enables compact navigation bar.
 	left: 0px !important;
 	top: 12px !important;
 }
+
+#urlbar:not([open]) #urlbar-background {
+	margin-top: 1px !important;
+	height: 26px !important;
+}

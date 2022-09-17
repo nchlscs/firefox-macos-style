@@ -17,7 +17,7 @@
 	font-size: 13px !important;
 }
 
-#urlbar[open="true"] {
+#urlbar[open] {
 	border-radius: 10px !important;
 	box-shadow: 0px 2px 20px rgba(4, 2, 5, 0.2) !important;
 }

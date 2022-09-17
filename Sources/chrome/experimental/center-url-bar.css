@@ -5,22 +5,20 @@ navbar left padding: 90
 navbar right padding: 8
 left toolbar items count: 5
 right toolbar items count: 3
-toolbar item width: 36
+toolbar item width: 38
 
-regular value: 90 - 8 + (5 - 3) * 38 = 154px
+regular value: 90 - 8 + (5 - 3) * 38 = 158px
 fullscreen value: (5 - 3) * 38 = 76px
 */
 
 #nav-bar toolbarspring:last-of-type:before {
-	-moz-box-flex: 1;
-	display: -moz-box;
+	display: block;
 	content: "";
 	width: 158px;
 }
 
 #main-window[inFullscreen] #nav-bar toolbarspring:last-of-type:before {
-	-moz-box-flex: 1;
-	display: -moz-box;
+	display: block;
 	content: "";
 	width: 76px;
 }
