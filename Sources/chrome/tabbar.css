@@ -33,6 +33,8 @@
 /* Space between tabs */
 .tabbrowser-tab {
 	padding-inline: 0px !important;
+}
+.tabbrowser-tab[first-visible-unpinned-tab] {
 	margin-inline-start: 0px !important;
 }
 
