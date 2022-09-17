@@ -25,11 +25,6 @@
 /* Centers text in urlbar */
 #urlbar:not([focused]) #urlbar-input {
 	text-align: center !important;
-	padding-right: 32px !important;
-}
-
-#urlbar:not([focused])[textoverflow] #urlbar-input {
-	padding-right: 0px !important;
 }
 
 /* Urlbar icons look */

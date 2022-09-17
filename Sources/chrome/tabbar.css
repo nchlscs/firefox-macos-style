@@ -5,8 +5,8 @@
 }
 
 :root:-moz-lwtheme {
-	--tab-inactive-color: rgba(0, 0, 0, 0.4);
-	--tab-hover-color: rgba(16, 16, 16, 0.4);
+	--tab-inactive-color: rgba(0, 0, 0, 0.3);
+	--tab-hover-color: rgba(34, 34, 34, 0.3);
 	--tab-border-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -47,7 +47,7 @@
 	border-right: 0.5px solid var(--tab-border-color) !important;
 }
 
-tab:hover:not([selected]):not([multiselected]) .tab-background {
+.tabbrowser-tab:hover:not([selected]):not([multiselected]) .tab-background {
 	background-color: var(--tab-hover-color) !important;
 }
 
@@ -64,7 +64,7 @@ tab:hover:not([selected]):not([multiselected]) .tab-background {
 }
 
 /* Sets tab bar transition durations */
-#tabbrowser-tabs:not(:hover) tab[fadein] {
+#tabbrowser-tabs:not(:hover) .tabbrowser-tab[fadein] {
 	transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms !important;
 }
 
@@ -82,11 +82,11 @@ tab:hover:not([selected]):not([multiselected]) .tab-background {
 	transition: opacity 200ms ease 0ms !important;
 }
 
-tab:hover .tab-close-button {
+.tabbrowser-tab:hover .tab-close-button {
 	opacity: 1 !important;
 }
 
-tab[pinned] .tab-close-button {
+.tabbrowser-tab[pinned] .tab-close-button {
 	display: none !important;
 }
 
@@ -99,19 +99,16 @@ tab[pinned] .tab-close-button {
 	display: none !important;
 }
 
-/* Sets tab max width */
-tab:not([style^="max-width"]):not([pinned]),
-tab[style^="max-width: 100px"]:not([pinned]) {
+/* Sets tab width */
+.tabbrowser-tab[fadein]:not([style*="max-width"], [pinned]) {
 	max-width: 100% !important;
 }
-
-tab:not([style^="max-width"]):not([pinned]):not([fadein]),
-tab[style^="max-width: 100px"]:not([pinned]):not([fadein]) {
-	max-width: 1px !important;
+.tabbrowser-tab[fadein]:not([style*="min-width"], [pinned]) {
+	min-width: 150px !important;
 }
 
 /* Hides single tab */
-tab[first-visible-tab][last-visible-tab]:not([pinned]) {
+.tabbrowser-tab[first-visible-tab][last-visible-tab]:not([pinned]) {
 	display: none !important;
 }
 
@@ -135,7 +132,7 @@ tab[first-visible-tab][last-visible-tab]:not([pinned]) {
 	content: "" !important;
 }
 
-tab:not([pinned]) .tab-content {
+.tabbrowser-tab:not([pinned]) .tab-content {
 	padding-right: 24px !important;
 }
 
