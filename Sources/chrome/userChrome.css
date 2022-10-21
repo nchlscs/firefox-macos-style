@@ -7,8 +7,9 @@
 @import "icons.css";
 
 /* Experimental CSS. Disabled by default. */
-/* @import "experimental/center-url-bar.css"; */
-/* @import 'experimental/compact-nav-bar.css'; */
+/* @import "experimental/center-urlbar.css"; */
+/* @import "experimental/floating-tabbar.css"; */
+/* @import "experimental/compact-navbar.css"; */
 
 /* Common colors */
 :root {
@@ -19,7 +20,7 @@
 	--background-color-primary: rgba(252, 252, 252, 1);
 	--background-color-secondary: rgba(191, 191, 191, 1);
 	--background-color-tertiary: rgba(252, 252, 252, 0.6);
-	--newtab-background-color: rgba(236, 236, 236, 1);
+	--newtab-background-color: rgba(225, 225, 225, 1);
 }
 
 :root:-moz-lwtheme {
@@ -27,10 +28,10 @@
 	--hover-color-secondary: rgba(255, 255, 255, 0.05);
 	--hover-color-tertiary: rgba(255, 255, 255, 0.25);
 	--tint-color-primary: rgba(187, 187, 187, 1);
-	--background-color-primary: rgba(42, 42, 42, 1);
+	--background-color-primary: rgba(40, 40, 40, 1);
 	--background-color-secondary: rgba(86, 86, 86, 1);
-	--background-color-tertiary: rgba(42, 42, 42, 0.6);
-	--newtab-background-color: rgba(46, 46, 46, 1);
+	--background-color-tertiary: rgba(40, 40, 40, 0.6);
+	--newtab-background-color: rgba(40, 40, 40, 1);
 }
 
 :root {
@@ -46,6 +47,8 @@
 	--autocomplete-popup-hover-background: var(--hover-color-primary) !important;
 	/* Empty page background color */
 	--tabpanel-background-color: var(--newtab-background-color) !important;
+	/* Button active color */
+	--button-active-bgcolor: var(--hover-color-tertiary) !important;
 }
 
 #nav-bar {
@@ -64,14 +67,14 @@
 #PersonalToolbar,
 #titlebar,
 #sidebar-box {
-	-moz-appearance: -moz-mac-vibrancy-light !important;
+	--moz-appearance: -moz-mac-vibrant-titlebar-light !important;
 }
 
 #nav-bar:-moz-lwtheme,
 #PersonalToolbar:-moz-lwtheme,
 #titlebar:-moz-lwtheme,
 #sidebar-box:-moz-lwtheme {
-	-moz-appearance: -moz-mac-vibrancy-dark !important;
+	--moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
 }
 
 /* Places window controls */
