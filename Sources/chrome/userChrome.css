@@ -5,11 +5,7 @@
 @import "findbar.css";
 @import "personaltoolbar.css";
 @import "icons.css";
-
-/* Experimental CSS. Disabled by default. */
-/* @import "experimental/center-urlbar.css"; */
-/* @import "experimental/floating-tabbar.css"; */
-/* @import "experimental/compact-navbar.css"; */
+@import "experimental.css";
 
 /* Common colors */
 :root {
