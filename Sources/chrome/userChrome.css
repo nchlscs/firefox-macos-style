@@ -6,6 +6,7 @@
 @import "personaltoolbar.css";
 @import "icons.css";
 @import "experimental.css";
+@import "custom.css";
 
 /* Common colors */
 :root {
