@@ -42,5 +42,4 @@
 .tab-background[selected],
 .tab-background[multiselected] {
 	background-color: var(--tab-active-color) !important;
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05) !important;
 }

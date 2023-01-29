@@ -1,6 +1,6 @@
 # Firefox macOS style
 
-Firefox style inspired by Safari. Only works properly on macOS.
+Firefox style inspired by Safari.
 
 ![Preview](https://raw.githubusercontent.com/nchlscs/firefox-macos-style/main/Preview.jpg)
 

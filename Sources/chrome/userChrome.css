@@ -1,3 +1,4 @@
+/* Firefox macOS style */
 @import "navbar.css";
 @import "urlbar.css";
 @import "tabbar.css";
@@ -5,7 +6,6 @@
 @import "findbar.css";
 @import "personaltoolbar.css";
 @import "icons.css";
-@import "experimental.css";
 @import "custom.css";
 
 /* Common colors */
@@ -25,9 +25,9 @@
 	--hover-color-secondary: rgba(255, 255, 255, 0.05);
 	--hover-color-tertiary: rgba(255, 255, 255, 0.25);
 	--tint-color-primary: rgba(187, 187, 187, 1);
-	--background-color-primary: rgba(40, 40, 40, 1);
+	--background-color-primary: rgba(38, 38, 38, 1);
 	--background-color-secondary: rgba(86, 86, 86, 1);
-	--background-color-tertiary: rgba(40, 40, 40, 0.6);
+	--background-color-tertiary: rgba(60, 60, 60, 0.6);
 	--newtab-background-color: rgba(40, 40, 40, 1);
 }
 

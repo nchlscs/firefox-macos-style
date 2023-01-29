@@ -6,8 +6,8 @@
 
 :root:-moz-lwtheme {
 	--tab-inactive-color: rgba(0, 0, 0, 0.3);
-	--tab-hover-color: rgba(0, 0, 0, 0.05);
-	--tab-border-color: rgba(0, 0, 0, 0.6);
+	--tab-hover-color: rgba(0, 0, 0, 0.15);
+	--tab-border-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Sets tab bar horizontal insets */
@@ -45,8 +45,8 @@
 	background-image: none !important;
 	box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.07) !important;
 	border-radius: 0px !important;
-	border-top: 0.5px solid var(--tab-border-color) !important;
-	border-right: 0.5px solid var(--tab-border-color) !important;
+	border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+	border-right: 1px solid var(--tab-border-color) !important;
 	outline: none !important;
 }
 
@@ -76,7 +76,7 @@
 
 /* Sets tab bar transition durations */
 #tabbrowser-tabs:not(:hover) .tabbrowser-tab[fadein] {
-	transition: all 500ms cubic-bezier(0.2, 1, 0.6, 1) 0ms !important;
+	transition: all 450ms cubic-bezier(0.2, 0.2, 0.6, 1) 0ms !important;
 }
 
 /* Places tab close button */

@@ -9,7 +9,7 @@
 }
 
 #urlbar-container {
-	max-width: 35% !important;
+	max-width: 50% !important;
 }
 
 #urlbar {
@@ -29,12 +29,12 @@
 
 /* Urlbar icons look */
 .urlbar-page-action {
-	padding: 0px !important;
+	height: 24px !important;
 	border-radius: 4px !important;
 }
 
 .urlbar-page-action image {
-	margin-left: 6px !important;
+	margin-top: -2px !important;
 	transform: scale(0.9, 0.9) !important;
 }
 

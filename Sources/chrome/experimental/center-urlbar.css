@@ -8,7 +8,7 @@ right toolbar items count: 3
 toolbar item width: 38
 
 regular value: 90 - 8 + (5 - 3) * 38 = 158px
-fullscreen value: (5 - 3) * 38 = 76px
+fullscreen value: (5 - 4) * 38 = 38px
 */
 
 #nav-bar toolbarspring:last-of-type:before {
@@ -20,5 +20,5 @@ fullscreen value: (5 - 3) * 38 = 76px
 #main-window[inFullscreen] #nav-bar toolbarspring:last-of-type:before {
 	display: block;
 	content: "";
-	width: 76px;
+	width: 38px;
 }
