@@ -119,7 +119,7 @@
 }
 
 /* Hides single tab */
-.tabbrowser-tab[first-visible-tab][last-visible-tab]:not([pinned]) {
+.tabbrowser-tab:first-of-type:last-of-type:not([pinned]) {
 	display: none !important;
 }
 
