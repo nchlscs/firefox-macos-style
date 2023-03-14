@@ -1,10 +1,10 @@
-body {
+:root {
 	--newtab-background-color: rgba(225, 225, 225, 1) !important;
 	--newtab-background-color-secondary: rgba(254, 254, 254, 1) !important;
 	--newtab-text-primary-color: rgba(72, 72, 72, 1) !important;
 }
 
-body[lwt-newtab-brighttext] {
+:root[lwt-newtab-brighttext] {
 	--newtab-background-color: rgba(40, 40, 40, 1) !important;
 	--newtab-background-color-secondary: rgba(34, 34, 34, 1) !important;
 	--newtab-text-primary-color: rgba(232, 232, 232, 1) !important;
