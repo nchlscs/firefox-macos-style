@@ -4,6 +4,10 @@ Firefox style inspired by Safari.
 
 ![Preview](https://raw.githubusercontent.com/nchlscs/firefox-macos-style/main/Preview.jpg)
 
+## Current state
+
+**This is broken starting Firefox 113. Unfortunately, I don't have spare time to maintain the project at the moment. But will be able to accept PRs if they come up.**
+
 ## Installation
 
 1. Open terminal and run the following script. It will download and place the contents of Sources folder to Firefox user folder. **Attention!** This will overwrite the current Firefox style, back it up first, if needed.
