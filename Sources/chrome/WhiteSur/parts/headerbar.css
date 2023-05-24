@@ -1,0 +1,89 @@
+/* Header bar */
+@import "headerbar-urlbar.css";
+@import "headerbar-private-urlbar.css";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* Headerbar */
+#nav-bar {
+	padding: 8px 16px 8px 86px !important;
+	transition: none !important;
+}
+
+/* Headerbar CSD colors */
+:root[tabsintitlebar] #nav-bar {
+	border: none !important;
+	border-bottom: none !important;
+	box-shadow: none !important;
+}
+
+:root[tabsintitlebar] #nav-bar:-moz-window-inactive {
+	box-shadow: none !important;
+}
+
+/* Headerbar buttons */
+#nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not(.toolbarbutton-1) {
+	-moz-appearance: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	background: none !important;
+	border-radius: var(--macos-menu-border-radius) !important;
+	padding: 0 4px !important;
+	min-height: 28px !important;
+	min-width: 28px !important;
+	color: var(--whitesur-toolbar-color) !important;
+	transition: background 200ms;
+}
+
+/* Buttons with margins */
+#nav-bar toolbarbutton:not(#urlbar-zoom-button):not(#allTabsMenu-searchTabs) {
+	margin: 0 2px !important;
+}
+
+#nav-bar #back-button:not(#hack),
+#nav-bar #forward-button:not(#hack) {
+	padding: 0 4px !important;
+	width: 32px !important;
+	min-width: 32px !important;
+}
+
+#nav-bar #forward-button:not(#hack) {
+	margin-left: 0 !important;
+}
+
+#nav-bar #back-button:not(#hack) {
+	margin-right: 1px !important;
+}
+
+/* Headerbar entries */
+#nav-bar #searchbar,
+#nav-bar #urlbar #urlbar-input-container {
+	-moz-appearance: none !important;
+	background: var(--whitesur-urlbar-background) !important;
+	border: none !important;
+	box-shadow: inset 0 0 0 1px var(--whitesur-hover-urlbar-border-color) !important;
+	border-radius: var(--macos-toolbar-border-radius) !important;
+	color: var(--whitesur-urlbar-color) !important;
+	padding: 0 6px !important;
+	height: 32px !important;
+	max-height: 32px !important;
+}
+
+#nav-bar #urlbar {
+	box-shadow: none !important;
+}
+
+#nav-bar #urlbar[breakout][breakout-extend] #urlbar-input-container,
+#nav-bar #urlbar[breakout][breakout-extend] #urlbar-input-container:hover {
+	padding: 0 6px !important;
+}
+
+#nav-bar #urlbar[focused]:not([breakout][breakout-extend]) #urlbar-input-container,
+#nav-bar #urlbar[focused]:not([breakout][breakout-extend]) #urlbar-input-container:hover {
+	box-shadow: none !important;
+}
+
+#nav-bar #searchbar:focus-within {
+	border: none !important;
+	background: var(--whitesur-urlbar-background) !important;
+	box-shadow: inset 0 0 0 2px var(--whitesur-focused-urlbar-highlight-color) !important;
+}

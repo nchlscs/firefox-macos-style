@@ -1,3 +1,6 @@
+@import "WhiteSur/theme.css";
+
+
 /* Firefox macOS style */
 @import "navbar.css";
 @import "urlbar.css";
@@ -60,7 +63,7 @@
 	-moz-box-ordinal-group: 3 !important;
 }
 
-#unified-extensions-button { display: none; }
+#unified-extensions-button, #urlbar-go-button { display: none; }
 
 #nav-bar,
 #PersonalToolbar,
