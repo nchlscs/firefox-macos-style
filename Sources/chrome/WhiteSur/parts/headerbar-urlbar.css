@@ -88,7 +88,7 @@
 
 #urlbar {
 	--urlbar-height: 32px;
-	--urlbar-toolbar-height: 32px !important;
+	--urlbar-toolbar-height: 36px !important;
 }
 
 #urlbar-search-mode-indicator {
