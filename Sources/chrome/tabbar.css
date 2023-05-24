@@ -27,7 +27,7 @@
 /* Remove default selected styling from toolbar buttons */
 #titlebar toolbarbutton image.toolbarbutton-icon {
 	box-shadow: none !important;
-	background-color: transparent !important;
+	background: transparent !important;
 }
 
 #titlebar toolbarbutton:-moz-window-inactive {
