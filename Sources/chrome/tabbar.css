@@ -28,12 +28,22 @@
 #titlebar toolbarbutton image.toolbarbutton-icon {
 	box-shadow: none !important;
 	background-color: transparent !important;
-	margin-top: -1px;
 }
 
 #titlebar toolbarbutton:-moz-window-inactive {
 	opacity: inherit !important;
 }
+
+#titlebar .tab-content {
+	display: grid; /* Cannnot use flex due to unoverridable XUL property */
+	grid-template-columns: 1fr 16px auto 1fr;
+	gap: 1ch;
+	margin-top: 1px;
+}
+
+.tab-close-button { grid-column: 1; grid-row: 1; }
+.tab-icon-stack { grid-column: 2; grid-row: 1; }
+.tab-label-container { grid-column: 3; grid-row: 1; }
 
 .tab-content:-moz-window-inactive, #titlebar toolbarbutton image.toolbarbutton-icon:-moz-window-inactive {
 	opacity: .6;
