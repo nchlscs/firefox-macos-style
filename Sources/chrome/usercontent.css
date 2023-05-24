@@ -91,3 +91,11 @@
 	font-weight: 800 !important;
 	user-select: none !important;
 }
+
+ @namespace url(http://www.w3.org/1999/xhtml);
+ @-moz-document regexp("chrome://browser/content/devtools/**/.*"){
+     .devtools-monospace {
+         font-family: 'SF Mono', monospace !important;
+         /*font-size: 8pt !important;*/
+     }
+ }
