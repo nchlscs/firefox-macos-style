@@ -14,11 +14,21 @@
 #titlebar {
 	margin-left: -40px !important;
 	margin-right: -40px !important;
+	order: 9 !important;
+}
+#nav-bar {
+	order: 0 !important;
 }
 
 #main-window[inFullscreen] #titlebar {
 	margin-left: 0px !important;
 	margin-right: 0px !important;
+}
+
+/* Remove gap before tabs start */
+#tabbrowser-tabs {
+	padding-inline-start: 0 !important;
+	margin-inline-start: 0 !important;
 }
 
 /* Sets tab sizes */
@@ -27,7 +37,7 @@
 	max-height: 28px !important;
 	min-height: 28px !important;
 	margin-bottom: 4px !important;
-	overflow-clip-margin: 4px !important;
+	overflow-clip-margin: 6px !important;
 }
 
 /* Space between tabs */
@@ -47,6 +57,7 @@
 	border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
 	border-right: 1px solid var(--tab-border-color) !important;
 	outline: none !important;
+	height: 100%;
 }
 
 .tabbrowser-tab:not([pinned]):last-of-type .tab-background {
