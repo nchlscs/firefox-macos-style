@@ -68,11 +68,14 @@
 	background-color: var(--tab-hover-color) !important;
 }
 
+.tab-background[selected] {
+	border-top: none !important;
+}
+
 .tab-background[selected],
 .tab-background[multiselected] {
 	background-color: transparent !important;
 	box-shadow: none !important;
-	border-top: none !important;
 }
 
 .tab-secondary-label {
