@@ -39,6 +39,7 @@
 	grid-template-columns: 1fr 16px auto 1fr;
 	gap: 1ch;
 	margin-top: 1px;
+	padding: 0 var(--inline-tab-padding) !important;
 }
 
 .tab-close-button { grid-column: 1; grid-row: 1; }
