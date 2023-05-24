@@ -16,6 +16,24 @@
 	margin-right: -40px !important;
 	order: 9 !important;
 }
+
+/* Stop toolbar buttons blowing out tab bar size */
+#titlebar toolbarbutton {
+	--toolbarbutton-inner-padding: 6px !important;
+	margin: 0 !important;
+	padding: 0 3.5px !important;
+}
+
+/* Remove default selected styling from toolbar buttons */
+#titlebar toolbarbutton image.toolbarbutton-icon {
+	box-shadow: none !important;
+	background-color: transparent !important;
+	margin-top: -1px;
+}
+
+#titlebar toolbarbutton:-moz-window-inactive {
+	opacity: inherit !important;
+}
 #nav-bar {
 	order: 0 !important;
 }
@@ -29,6 +47,7 @@
 #tabbrowser-tabs {
 	padding-inline-start: 0 !important;
 	margin-inline-start: 0 !important;
+	border-inline-start: none !important;
 }
 
 /* Sets tab sizes */
@@ -49,31 +68,33 @@
 }
 
 /* Sets tab appearance */
-.tab-background {
+.tab-background, #titlebar toolbarbutton {
 	min-height: 28px !important;
 	background-color: var(--tab-inactive-color) !important;
 	background-image: none !important;
 	border-radius: 0px !important;
 	border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
-	border-right: 1px solid var(--tab-border-color) !important;
 	outline: none !important;
 	height: 100%;
+	border-right: 1px solid var(--tab-border-color) !important;
 }
 
 .tabbrowser-tab:not([pinned]):last-of-type .tab-background {
 	border-right: none !important;
 }
 
-.tabbrowser-tab:hover:not([selected]):not([multiselected]) .tab-background {
+.tabbrowser-tab:hover:not([selected]):not([multiselected]) .tab-background, #titlebar toolbarbutton:hover:not([aria-pressed="true"]) {
 	background-color: var(--tab-hover-color) !important;
 }
 
-.tab-background[selected] {
-	border-top: none !important;
+.tab-background[selected],
+#titlebar toolbarbutton[aria-pressed="true"] {
+	border-top-color: transparent !important;
 }
 
 .tab-background[selected],
-.tab-background[multiselected] {
+.tab-background[multiselected],
+#titlebar toolbarbutton[aria-pressed="true"] {
 	background-color: transparent !important;
 	box-shadow: none !important;
 }
