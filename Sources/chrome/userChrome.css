@@ -65,6 +65,10 @@
 
 #unified-extensions-button, #urlbar-go-button { display: none; }
 
+#nav-bar-customization-target :where(#reload-button, #stop-button) > .toolbarbutton-icon {
+	padding: calc(var(--toolbarbutton-inner-padding)) var(--toolbarbutton-inner-padding) calc(var(--toolbarbutton-inner-padding)) !important;
+}
+
 #nav-bar,
 #PersonalToolbar,
 #titlebar,
