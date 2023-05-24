@@ -60,6 +60,8 @@
 	-moz-box-ordinal-group: 3 !important;
 }
 
+#unified-extensions-button { display: none; }
+
 #nav-bar,
 #PersonalToolbar,
 #titlebar,
